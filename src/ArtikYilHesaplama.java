@@ -14,7 +14,6 @@ public class ArtikYilHesaplama {
             System.out.print(year + " bir artık yıldır ! ");
 
         }else if ((year % 400 == 0) && (year % 100 == 0) && (year % 4 == 0) ) {
-
             System.out.print(year + " bir artık yıldır ! ");
 
         } else {
