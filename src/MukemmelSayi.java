@@ -1,27 +1,25 @@
 import java.util.Scanner;
 
-import static java.lang.System.out;
-
 public class MukemmelSayi {
     public static void main(String[] args) {
-        int toplam = 0;
-        Scanner sc = new Scanner(System.in);
-        while(1==1)
-        {
-            out.print("Sayiyi giriniz : ");
-            int sayi = sc.nextInt();
-            for(int i=1;i<sayi;i++) {
-                if (sayi % i == 0)
-                    toplam += i;
+        int sayi,total=0;
+        Scanner inp=new Scanner(System.in);
+
+        System.out.println("Please enter the number: ");
+        sayi=inp.nextInt();
+
+        for(int i=1; i<sayi; i++){
+
+            if(sayi%i==0){
+                total+=i;
             }
-            if(toplam == sayi)
-                out.println("Girdiginiz sayi bir mukemmel sayidir.");
-            else
-                out.println("Girdiginiz sayi mukemmel sayi degildir.");
-            toplam = 0;
+        }if(sayi==total){
+            System.out.println(sayi+"\n" +
+                    "is the perfect number.");
+        }else{
+            System.out.println(sayi+"\n" +
+                    "is not a perfect number");
         }
-
-
 
     }
 }
